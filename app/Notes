@@ -1,0 +1,237 @@
+What is an operator? What kinds of operators are there in JavaScript?
+  Unary
+  Binary
+  Ternary - only  ?:
+    a === b? 'yes' : 'no'
+    conseptually a little bit like an if else statement
+
+
+    +, -, *, /, %%, ||
+    Symbolic
+    Behaves like a method or function
+    Classification (UBT) refers to the number of arguments
+    Operand Operator Operand
+    5         +         5
+
+______
+
+What are null and undefined? pg18
+  Special Values: Absence of a meaningful value
+  (placeholder for a value?  a void?)
+
+What are Types?
+  Of values
+    numbers, strings, booleans, objects, functions, undefined values
+
+What data types are primitve to JavaScript?
+    object, string, number, undefined, boolean, null, symbol
+
+What is type coercion? pg18
+  When an operator is applied to thew wrong type of vale:
+  Converting the value to the type it wants
+
+Why is == evil? pg19
+  JS will try to convert one of the values to the other values type sometimes
+  use ===
+
+How does short-circuit evaluation of logic work? pg19/20
+  The values on the left are evaluated first, for:
+  && - if the first is false, doesnt even look at the right
+  || - if the left is true, doesnt even look at the right
+
+Variable
+  a label for a value, points to where a value lives in the computer memory
+
+What is variable assignment? Variable reassignment? pg24/25
+  Variable are ways to 'catch' and hold values , they dont contain them, they point to them, or 'grasp' them.
+      variable for 5 * 5 will point to 25, not become 25
+      = can be used to change this variable, and make it point to another
+      Two variables can point to the same value, not contain values that equal eachother**
+
+What are valid variable names in JavaScript?*******
+
+Explain how memory is allocated for variables.********
+
+What is the environment? pg26
+  The collection of variables and their values that exist at a given time
+
+What are functions? pg27
+  A piece of program wrapped in a value
+
+What is a while loop?
+  A way to repeat code to satisfy a condition it:
+    Initializes*, Checks*, and Updates* until condition is met
+
+What is a for loop?
+  Shorter more inline way of writing a while loop?  And doesn't make nearly as much sense
+
+What is a switch statement?
+  like and if statement -
+    The program will jump to the label that corresponds to the value that 'switch' was given
+    or to default if no matching value is found
+
+What is a comment?
+  //   syntax for being able to type comments
+
+
+
+MAJOR QUOTES FROM ANDREAS IN CLASS _
+pg2
+pg3
+
+
+How does variable scope work in JS
+ function() {
+
+ }
+__________________________________________________
+While Do LOOPs - Ex.
+
+var product = function(array) {
+  var result = 1;
+  for (var i = 0; i < array.length; i ++) {
+    result *= array[i];
+    };
+    return result;
+};
+
+
+var product = function(array) {
+  var result = 1;                     var result = 1, i = 0;
+  var i = 0;
+  while (i < array.length) {
+    result *= array[i];               result = (result * array[i]);
+    i = (i + 1);
+  }
+  return result;
+};
+
+
+__________________________________________________
+Switch Case
+
+switch(condition) {
+  page 35
+}
+__________________________________________________
+
+RETURN
+
+Ruby
+  def moo
+    "moo"
+  end
+
+  moo
+> "moo"
+______
+JS
+
+  var moo = function() {
+    "moo"
+  }
+
+  moo();
+> undefined
+
+
+  var moo = function() {
+    return "moo"
+  };
+
+  moo();
+> "moo"
+
+
+__________________________________________________
+
+ var num = 12
+ Declaring functions -
+
+
+ funkt = function() {
+   console.log("hi");
+ };                   define before a call
+                      introduces local scope
+                      declaring a variable whos value is a function
+
+ function funkt() {
+   console.log("hi")
+                      DONT USE - why?
+ };                   declaring a function
+                      can define the fuction after youve already used it
+                      introduces global scope
+                      if this was nested inside another function, the variable would
+                        still be global??
+
+var nums = [1, 2, 3]
+
+nums.forEach(function(argument)) {
+  console.log(argument);
+});
+                      another way - ask
+
+smilar to:
+
+nums.each do |argument|      <---  ruby
+  puts argument
+end
+
+ to invoke the function -
+  funct()    <--
+
+  invoking
+  calling or
+  applying the function
+
+
+  foo = "foo"     is global      DONT USE - why?
+  var foo = "foo" is local       USE
+___________________________________________________
+Control Flow
+  controlled sequence of events
+
+while
+for
+if, else
+do (while) - code in here will be executed at least once
+switch
+break
+continue
+
+These things modify the flow of the application in different ways
+
+
+
+___________________________________________________
+
+Three primary trypes of operators
+  Unary
+  Bunary
+  Ternary
+
+    Symbolic
+    Combines values
+    Does something
+    Behaves like a method or function
+
+
+_____________________________
+Q's
+
+
+function part of the list?
+
+String(null).toString
+
+What does the greyed out thing mean in NODE
+
+Node vs, Chrome vs JSBin
+
+Side effects
+
+Math in language vs just on a computer - bits?
+
+
+
+_________________________________

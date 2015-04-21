@@ -1,0 +1,44 @@
+hello = [1, 2, 3]
+
+
+
+
+var product = function(monkey) {
+  var result = 1;
+  for (var i = 0; i < monkey.length; i ++) {
+    result *= monkey[i];
+    };
+    return result;
+};
+
+
+
+
+
+
+product(hello)
+
+
+
+
+
+
+
+
+
+var product = function(hello) {
+  var result = 1;
+  var rutimes = 0;
+  while (runtimes < hello.length) {
+    result = result * hello[runtimes];         result *= hello[i]
+    i = (i + 1);                        i ++
+  }
+  return result;
+};
+
+
+
+_________________
+var something = function() {
+  
+};
